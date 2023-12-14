@@ -10,4 +10,4 @@ Refer to the [actions tab](https://github.com/RealDyllon/github-flow-demo/action
 
 This avoids the need for "release" or "prod" branches. 
 
-Deployment approvals may be audited in the deployments page. Deployment approval criteria may be changes in settings -> environments -> <env_name>
+Deployment approvals may be audited in the deployments page. Deployment approval criteria may be changed in settings -> environments -> <env_name>
