@@ -7,10 +7,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  deployment:
+  deployment-staging:
     runs-on: ubuntu-latest
-    environment: production
+    environment: staging
     steps:
       - name: deploy
         run: |
-          echo "deploying to the sky..."
+          echo "deploying to staging server..."
+
+  # production env is protected - requires 1 approval to deploy
+  deployment-production:
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - name: deploy
+        run: |
+          echo "deploying to production server..."
