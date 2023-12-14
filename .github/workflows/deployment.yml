@@ -18,7 +18,7 @@ jobs:
   # production env is protected - requires 1 approval to deploy
   deployment-production:
     runs-on: ubuntu-latest
-    environment: staging
+    environment: production
     steps:
       - name: deploy
         run: |
